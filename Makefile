@@ -1,10 +1,10 @@
 CC=ocamlc -c
 LINK=ocamlc -a -linkall
-LIB=lics-lib.cma
+LIB=licsLib.cma
 CMI=ast.cmi
 CMO=licsFileIO.cmo
 DOC=ast.mli licsFileIO.ml
-FLAGS= -annot
+FLAGS=-annot
 
 all: $(CMI) $(CMO)
 	$(LINK) $(FLAGS) -o $(LIB) $(CMO)
