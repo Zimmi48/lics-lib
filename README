@@ -1,0 +1,4 @@
+La bibli contient une fonction read et une fonction write prenant toutes
+deux un nom de fichier et pour write la valeur à écrire.
+Pour l'instant un bug fait que ceci n'apparaît pas dans la doc.
+A corriger aussi, l'affichage des caractères UTF-8 dans la doc.
