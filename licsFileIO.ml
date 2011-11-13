@@ -1,5 +1,4 @@
-module LicsFileIO = struct
-include Ast
+open LicsAst
 
 (** lit une valeur de type program dans le fichier dont le nom est passé en argument *)
 let read s : program =
@@ -12,4 +11,3 @@ let read s : program =
 let write s v =
   let file = open_out s in
   output_value file v
-end
