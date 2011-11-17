@@ -18,6 +18,6 @@ type stmt =
 type program = stmt list
 
 (** type à enregistrer dans le binaire de sortie du compilo *)
-type circuitLics = { nb_var : int; nb_reg : int; programme : program}
+type circuitLics = { numero_var_max : int; nb_reg : int; programme : program}
 
 
