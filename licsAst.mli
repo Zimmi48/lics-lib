@@ -1,4 +1,3 @@
-
 (** types de description des actions à exécuter *)
 
 type unaire = Not
@@ -17,3 +16,8 @@ type stmt =
   | Outputreg of int | Output of int
 
 type program = stmt list
+
+(** type à enregistrer dans le binaire de sortie du compilo *)
+type circuitLics = { nb_var : int; nb_reg : int; programme : program}
+
+

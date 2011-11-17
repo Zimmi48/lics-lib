@@ -1,7 +1,7 @@
 open LicsAst
 
 (** lit une valeur de type program dans le fichier dont le nom est passé en argument *)
-let read s : program =
+let read s : circuitLics =
   let file = open_in s in
   input_value file
 
