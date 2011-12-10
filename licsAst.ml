@@ -14,7 +14,6 @@ type stmt =
     Assign of int * expression
   | Inputreg of int | Input of int
   | Outputreg of int | Output of int
-  | Syscall of int * int
   | Inputram of int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int * int
 (** Les 32 premiers bits indiquent les registres où sera stockée l'information (équivalent d'un unique registre MIPS 32 bits.
    Les 8 derniers indiquent l'adresse de lecture (donc on a une RAM de 256 * 4 octets)
