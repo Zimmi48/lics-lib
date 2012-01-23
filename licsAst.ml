@@ -12,8 +12,8 @@ type expression =
 
 type stmt =
     Assign of int * expression
-  | Lw of string * (int list) * (int list) | Inputreg of int | Input of int
-  | Sw of string * (int list) * (int list) | Outputreg of int | Output of int
+  | Lw of int list * int list | Inputreg of int | Input of int
+  | Sw of int list * int list | Outputreg of int | Output of int
 (** Pour Lw, on fournit d'abord la liste des variables d'arrivée
     (de départ pour Sw),
     ensuite celle donnant l'adresse *)
